@@ -1,0 +1,320 @@
+
+/*
+=======================================================
+================= M E D I A  Q U E R I E S ================
+=======================================================
+*/
+
+/*======== Reusable Componantss =========*/
+
+$common-color: #ffffff;
+$heading-color: #161859;
+$heading4-color: #EB5757;
+$hover-color: #4168F1;
+$text-color: #4F4F4F;
+$menu-color: #323D5B;
+$banner-btn-bg: linear-gradient(102.48deg, #773CF3 21.83%, #4168F1 84.76%),
+linear-gradient(0deg, #C4C4C4, #C4C4C4);
+$box-bg: linear-gradient(129.13deg, #3098F8 27.57%, #40C6FF 75.06%),
+linear-gradient(0deg, #C4C4C4, #C4C4C4);
+$btn-bg: linear-gradient(281.24deg, #3098F8 18.17%, #4168F1 82.12%),
+linear-gradient(0deg, #C4C4C4, #C4C4C4);
+
+/*======= Collapse Menu Button =======*/
+.header-section .navigation button {
+    float: right;
+    margin-top: 2.4rem;
+}
+.header-section .navigation button:focus {
+cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.animated-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin-right: 0;
+    border: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+.animated-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+.animated-icon span {
+    background: $text-color;
+}
+.animated-icon2 span {
+    background: $text-color;
+}
+.animated-icon3 span {
+    background: $text-color;
+}
+.animated-icon span:nth-child(1) {
+    top: 0px;
+}
+.animated-icon span:nth-child(2) {
+    top: 10px;
+}
+.animated-icon span:nth-child(3) {
+    top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.animated-icon.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+.animated-icon.open span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+/*======== BANNER =========*/
+.banner {
+    .banner-text {
+        .banner-title {
+            margin-top: 20rem !important;
+        }
+
+    }
+}        
+.feature-btn {
+    margin-bottom: 3rem;
+}
+
+
+/*==========================================================*/
+/* x-Small devices (landscape phones, 375px and up) */
+/*==========================================================*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 767.98px) {  
+
+    /*======== SERVICES SECTION =========*/
+    .services-section {
+        text-align: center;
+        .services-box {
+            padding: 2rem;
+            margin: 3rem 3rem !important;
+        }
+    }
+
+    /*======== ABOUT SECTION =========*/
+    .about-section {
+        .about-text {
+            text-align: center !important;
+            .about-title {
+                text-align: center !important;
+                h4 {
+                    text-align: center !important;
+                    margin-top: 5rem;
+                }
+                h2 {
+                    text-align: center !important;
+                }
+            }
+            .about-describe {
+                text-align: center !important;
+                margin-top: 2rem;
+            }
+        }
+    }
+    /*======== FEATURES SECTION =========*/
+    .feature-section {
+        .feature-text {
+            text-align: center !important;
+            .feature-title {
+                h4 {
+                    text-align: center !important;
+                }
+                h2 {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+    /*======== PROJECT SECTION =========*/
+    .project-section {
+        .project-row {
+            .project-box {
+                .box-text {
+                    P {
+                        font-size: 1.8rem !important;
+                    }
+                }
+            }
+        }
+    }
+    /*======== TESTIMONIAL SECTION =========*/
+    .testimonial-section {
+        .testimonial-slider {
+
+            .client {
+                .description {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    /*======== CONTACT SECTION =========*/
+    .contact-section {
+        .contac-text {
+            
+            .contact-title {
+                h2 {
+                    text-align: center !important;
+                    margin: 0 !important;
+                }
+                h4 {
+                    text-align: center !important;
+                }
+            }
+            .contact-describe {
+                .description {
+                    text-align: center !important;
+                }
+            }
+        }
+        .contact-img {
+            margin-top: 5rem;
+        }
+    }
+    /*======== FOOTER SECTION =========*/
+    .footer-section {
+        padding: 0 !important;
+        .footer-wrapper {
+            text-align: center;
+            .contact-mail {
+                .footer-email {   
+                    padding: 0 7rem !important;
+                    i{
+                        margin-right: 0 !important;
+                    }
+                }
+
+            }
+        }
+        .footer-title {
+            margin-top: 3rem;
+            text-align: center;
+            h3 {
+                text-align: center !important;
+            }
+            ul {
+                margin-top: 1rem !important;
+                width: 60% !important;
+                margin: 0 auto !important;
+                li {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    /*======== COPY-RIGHT =========*/
+    .footer-end {
+        padding: 3rem 0 !important;
+        .copy-right {
+            p {
+                font-size: 1.4rem;
+                font-weight: 700;
+                display: inline-block;
+            }
+        }
+        .social-icon{
+            display: block;
+            i {
+                color: $text-color !important;
+                padding: 0 !important;
+                margin-right: 0.8rem !important;
+                line-height: normal;
+                
+                transition: 0.5s;
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+/*==========================================================*/
+/* Small devices (landscape phones, 576px and up) */
+/*==========================================================*/
+@media only screen and (min-device-width : 576px) and (max-device-width : 767.98px) {  
+
+    /*======== PROJECT SECTION =========*/
+    .project-section {
+        .project-row {
+            text-align: center !important;
+        }
+    }
+
+    /*======== FOOTER SECTION =========*/
+    .footer-section {
+        .footer-title {
+            ul {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+/*==========================================================*/
+/* Medium devices (landscape Tab, 768px and up) */
+/*==========================================================*/
+@media only screen and (min-device-width : 576px) and (max-device-width : 767.98px) {  
+
+    /*======== PROJECT SECTION =========*/
+    .project-section {
+        .project-row {
+            text-align: center !important;
+        }
+    }
+
+    /*======== FOOTER SECTION =========*/
+    .footer-section {
+        .footer-title {
+            ul {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+/*==========================================================*/
+/* Large devices (landscape Laptop, 992px and up) */
+/*==========================================================*/
